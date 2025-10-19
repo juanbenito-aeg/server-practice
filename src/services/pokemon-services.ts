@@ -10,15 +10,13 @@ async function createPokemon(newPokemon) {
   return createdPokemon;
 }
 
-// async function updatePokemon(name, changes) {
-//   const pokemonToUpdate = await Pokemon.getPokemon({ name });
+async function updatePokemon(name, changes) {
+  // const pokemonToUpdate = await Pokemon.getPokemon({ name });
+  // if (pokemonToUpdate.active === false) {
+  //   changes = { ...changes, active: true };
+  // }
+  // const updatedPokemon = await Pokemon.updatePokemon({ name }, changes);
+  // return updatedPokemon;
+}
 
-//   if (pokemonToUpdate.active === false) {
-//     changes = { ...changes, active: true };
-//   }
-
-//   const updatedPokemon = await Pokemon.updatePokemon({ name }, changes);
-//   return updatedPokemon;
-// }
-
-export default { getAllPokemon, createPokemon };
+export default { getAllPokemon, createPokemon, updatePokemon };

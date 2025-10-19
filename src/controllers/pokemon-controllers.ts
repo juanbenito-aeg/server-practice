@@ -11,4 +11,11 @@ async function createPokemon(req, res) {
   res.status(201).send(createdPokemon);
 }
 
+async function updatePokemon(req, res) {
+  // const { name } = req.params;
+  // const changes = req.body;
+  // const updatedPokemon = await PokemonServices.updatePokemon(name, changes);
+  // res.send(updatedPokemon);
+}
+
 export default { getAllPokemon, createPokemon };

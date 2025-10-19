@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const pokemonSchema = new mongoose.Schema(
   {
     active: Boolean,
-    name: String,
+    name: { type: String, unique: true },
     base_experience: Number,
   },
   { collection: "pokemon" }
